@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Your Name · Data Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+  <meta name="description" content="Data portfolio showcasing projects in SQL, Python, and BI." />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="id">
+        <h1>Your Name</h1>
+        <p class="tagline">Data Analyst · SQL | Python | Tableau</p>
+      </div>
+      <nav class="nav">
+        <a href="#projects">Projects</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+        <a class="btn" href="resume.pdf">Resume</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="hero">
+      <div class="hero-text">
+        <h2>Hi, I’m Your Name 👋</h2>
+        <p>I turn messy data into clear decisions. I enjoy SQL, Python, and building dashboards that answer real business questions. Below are a few recent projects—each includes a short description and links to code or live dashboards.</p>
+        <div class="social">
+          <a href="https://github.com/yourusername" target="_blank" rel="noopener">GitHub</a>
+          <a href="https://www.linkedin.com/in/yourhandle" target="_blank" rel="noopener">LinkedIn</a>
+          <a href="mailto:you@example.com">Email</a>
+        </div>
+      </div>
+      <div class="hero-aside">
+        <img src="images/profile.svg" alt="Profile illustration" />
+      </div>
+    </section>
+
+    <section id="projects">
+      <h3>Featured Projects</h3>
+      <div class="grid">
+        <article class="card">
+          <img src="images/project-1.svg" alt="Retail Market Analysis thumbnail" />
+          <div class="card-body">
+            <h4>Retail Market Analysis</h4>
+            <p>Exploratory analysis of sales &amp; inventory. Built with Excel and Python to identify drivers of margin.</p>
+            <div class="actions">
+              <a class="btn" href="https://github.com/yourusername/retail-analysis" target="_blank" rel="noopener">Code</a>
+              <a class="btn outline" href="#" target="_blank" rel="noopener">Write-up</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="card">
+          <img src="images/project-2.svg" alt="Education Dashboard thumbnail" />
+          <div class="card-body">
+            <h4>Education Dashboard</h4>
+            <p>Interactive Tableau dashboard exploring enrollment and outcomes by district.</p>
+            <div class="actions">
+              <a class="btn" href="https://public.tableau.com/" target="_blank" rel="noopener">Live Dashboard</a>
+              <a class="btn outline" href="https://github.com/yourusername/education-dashboard" target="_blank" rel="noopener">Repo</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="card">
+          <img src="images/project-3.svg" alt="SQL Case Study thumbnail" />
+          <div class="card-body">
+            <h4>SQL Case Study</h4>
+            <p>Complex joins, window functions, and CTEs to analyze customer retention and revenue.</p>
+            <div class="actions">
+              <a class="btn" href="https://github.com/yourusername/sql-case-study" target="_blank" rel="noopener">Queries</a>
+              <a class="btn outline" href="#" target="_blank" rel="noopener">Blog</a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="about" class="about">
+      <h3>About</h3>
+      <p>I have experience in data cleaning, feature engineering, and BI storytelling. Tools I use most: SQL (PostgreSQL / BigQuery), Python (pandas, matplotlib), and Tableau/Power BI.</p>
+      <ul class="skills">
+        <li>SQL</li><li>Python</li><li>Tableau</li><li>Power BI</li><li>Excel</li><li>Git</li>
+      </ul>
+    </section>
+
+    <section id="contact" class="contact">
+      <h3>Contact</h3>
+      <p>Best way to reach me is via <a href="mailto:you@example.com">email</a> or <a href="https://www.linkedin.com/in/yourhandle" target="_blank" rel="noopener">LinkedIn</a>.</p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; <span id="year"></span> Your Name. Built with plain HTML &amp; CSS on GitHub Pages.</p>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
